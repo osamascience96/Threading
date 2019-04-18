@@ -1,0 +1,16 @@
+import threading
+
+class Messenger(threading.Thread):
+    def run(self):
+        # interation to 10 numbers 
+        for _ in range(10):
+            # Getting the name of the current thread 
+            print(threading.currentThread().getName() + "\n")
+
+
+x = Messenger(name = 'Send out Messages')
+y = Messenger(name = 'Recevice Messages')
+
+# start the thread of the messanger 
+x.start()
+y.start()
