@@ -1,0 +1,16 @@
+'Exception Handling example divison by 0
+Module Module1
+
+    Dim n As Double = 3
+    Dim result As Double
+
+    Sub Main()
+        Try
+            result = 5 / n
+            Console.WriteLine(result)
+        Catch ex As Exception
+            Console.WriteLine("Cannot Divide by 0")
+        End Try
+    End Sub
+
+End Module  
